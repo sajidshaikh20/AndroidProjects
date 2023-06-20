@@ -6,8 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <androidx.appcompat.widget.AppCompatEditText
-        android:id="@+id/AppCom_Edit_Text"
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/editText"
         android:layout_height="50dp"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
@@ -16,36 +16,36 @@
         android:inputType="numberSigned"
         android:hint="  Enter a number"
         android:background="@drawable/edit_text_input"
-        app:layout_constraintBottom_toTopOf="@id/AppCom_Button"
+        app:layout_constraintBottom_toTopOf="@id/Peramids"
         />
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/AppCom_Button"
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/Peramids"
         android:text="Peraminds"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toStartOf="@id/AppCom_Button2"
+        app:layout_constraintEnd_toStartOf="@id/triangle"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         />
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/AppCom_Button2"
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/triangle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:text="Triangle"
-        app:layout_constraintBottom_toBottomOf="@+id/AppCom_Button"
+        app:layout_constraintBottom_toBottomOf="@+id/Peramids"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/AppCom_Button"
-        app:layout_constraintTop_toTopOf="@+id/AppCom_Button"
+        app:layout_constraintStart_toEndOf="@id/Peramids"
+        app:layout_constraintTop_toTopOf="@+id/Peramids"
         />
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/App_TextView"
+    <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/AppCom_Button" />
+        app:layout_constraintTop_toBottomOf="@id/Peramids" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
