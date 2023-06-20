@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".healthform.healform_ui">
+
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Title"
+        android:layout_marginTop="10dp"
+        android:textSize="30sp"
+        android:textColor="#D70505"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/UserNameEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:background="#23C4464A"
+        android:hint="@string/HintName"
+        android:inputType="textPersonName"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/Title"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        tools:layout_editor_absoluteX="25dp" />
+
+    <EditText
+        android:id="@+id/UserSurNameEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/UserNameEdt"
+        android:inputType="textPersonName"
+        android:hint="@string/HintSurName"
+        android:background="#23C4464A"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:padding="8dp"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/UserSurEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/UserSurNameEdt"
+        android:inputType="textEmailAddress"
+        android:hint="@string/HintEmail"
+        android:background="#23C4464A"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:padding="8dp"
+        android:autofillHints="" />
+
+
+    <EditText
+        android:id="@+id/UserContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/UserSurEmail"
+        android:inputType="number"
+        android:hint="@string/HintContact"
+        android:background="#23C4464A"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:padding="8dp"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/UserDob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/UserContact"
+        android:inputType="date"
+        android:hint="@string/HintDob"
+        android:background="#23C4464A"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:padding="8dp"
+        android:autofillHints="" />
+    <TextView
+        android:id="@+id/GenderView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/genderTitle"
+        android:padding="4dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="#D70505"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@id/UserSurNameEdt"
+        app:layout_constraintTop_toBottomOf="@id/UserDob"
+        android:layout_marginTop="20dp"
+        />
+
+
+    <TextView
+        android:id="@+id/Healthview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="#D70505"
+        android:text="@string/HealthTitle"
+        android:padding="4dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/GenderView"
+        app:layout_constraintTop_toBottomOf="@id/Male"
+
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/SubmitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2D9106"
+        android:text="@string/SubmitTitle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="70dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/ResetButton"
+
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/ResetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2D9106"
+        android:text="@string/ResetTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/SubmitButton"
+        android:layout_marginBottom="70dp"
+        />
+
+
+    <RadioButton
+        android:id="@+id/Male"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Male"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/GenderView"
+        app:layout_constraintTop_toBottomOf="@id/GenderView"
+        tools:ignore="MissingConstraints" />
+
+    <RadioButton
+        android:id="@+id/Female"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:text="Female"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@id/Male"
+        app:layout_constraintTop_toBottomOf="@id/GenderView"
+        tools:ignore="MissingConstraints" />
+    />
+    <RadioButton
+        android:id="@+id/fever"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fever"
+        app:layout_constraintStart_toStartOf="@+id/Healthview"
+        app:layout_constraintTop_toBottomOf="@+id/Healthview"
+        android:textSize="15sp"
+        />
+
+
+    <RadioButton
+
+        android:id="@+id/Maleria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="Malaria"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/Cold"
+        app:layout_constraintStart_toEndOf="@+id/fever"
+        app:layout_constraintTop_toBottomOf="@id/Healthview" />
+
+    <RadioButton
+        android:id="@id/Cold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cold cough"
+        app:layout_constraintStart_toEndOf="@+id/Maleria"
+        app:layout_constraintTop_toBottomOf="@id/Healthview"
+        android:textSize="15sp"
+        android:layout_marginLeft="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">AndroidProjects</string>
+    <string name="Instagrambtn">Instagram</string>
+
+    <style name="Pelindrome">Pelindrome| Reverse</style>
+
+    <style name="peramids">Peramids</style>
+
+    <style name="health">HealthForm</style>
+
+    <style name="linkedln">Linkedln</style>
+
+    <string name="bio">जिन्दगी का कोई एतबार नहीं, जिस कदर मुमकीन हो जरूरतमंदों के काम आओ! हज़रत इमाम हुसैन र. अ.
+@rijju_lala_blood_donation</string>
+    <string name="title_activity_pelindrome_riverse">pelindromeRiverse</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    //palidrome string
+    <string name="button">Submit</string>
+    <string name="resetBtn">Reset</string>
+    <string name="PelinBtn">Pelindrome</string>
+    <string name="hint_text">Enter the String</string>
+
+
+    //healthform string
+    <string name="genderTitle">Gender</string>
+    <string name="Title">Health Forms</string>
+    <string name="HintName">Enter Name</string>
+    <string name="HintSurName">Enter Surname</string>
+    <string name="HintEmail">Enter Emails</string>
+    <string name="HintContact">Number</string>
+    <string name="HintDob">Date Of Birth</string>
+    <string name="ResetTitle">Reset</string>
+    <string name="SubmitTitle">Submit</string>
+    <string name="HealthTitle">Health Issue</string>
+    <string name="title_activity_second_screen">secondScreen</string>
+
+    //linkedln
+
+    <string name="HintSearch">Search</string>
+    <string name="UserName">Shivani Yadav . </string>
+    <string name="ConctionType">1st</string>
+    <string name="quates">We\'re hiring a new FLUTTER DEVELOPER FRESHER INTERN(unpaid) in india.Apply today or share this post with your network</string>
+    <string name="title_activity_second">activity_second</string>
+    <string name="position">HR| Hiring for if industry | Shopify</string>
+    <string name="TimeAgo"> 51m. Edited</string>
+    <string name="like">Like</string>
+    <string name="Comments">Comment</string>
+    <string name="Repost">Repost</string>
+    <string name="Send">Send</string>
+    <string name="NextScreen">NextScreen</string>
+    <string name="send">Send</string>
+    <string name="commentName">Sajid Shaikh and 7 others </string>
+
+</resources>

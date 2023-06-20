@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lockTextView"
+        android:layout_width="24dp"
+        android:layout_height="25dp"
+        android:text="\uD83D\uDD12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/userview"
+        android:layout_width="123dp"
+        android:layout_height="24dp"
+        android:text="sajid_bhuru2023"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/lockTextView"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/ig_down_arrao"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.036"
+        app:layout_constraintStart_toEndOf="@+id/userview"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.052"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="8dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="196dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/outline_add_box_24"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toEndOf="@+id/userview"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="24dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/menu_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="61dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="616dp"
+        android:src="@drawable/demo_profile_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.02"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/post"
+        android:layout_width="19dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="60dp"
+        android:text="92"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        tools:ignore="InvalidId,MissingConstraints"
+        tools:layout_editor_absoluteY="60dp" />
+
+    <TextView
+        android:id="@+id/followers"
+        android:layout_width="43dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="40dp"
+        android:text="1103"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/following"
+        app:layout_constraintHorizontal_bias="0.915"
+        app:layout_constraintStart_toEndOf="@+id/post"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="InvalidId,MissingConstraints" />
+
+    <TextView
+        android:id="@+id/following"
+        android:layout_width="29dp"
+        android:layout_height="21dp"
+
+        android:layout_marginTop="32dp"
+        android:text="561"
+
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        tools:ignore="InvalidId,MissingConstraints"
+        tools:layout_editor_absoluteX="334dp" />
+
+    <TextView
+        android:id="@+id/postname"
+        android:layout_width="38dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="48dp"
+        android:text="Post"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/followerName"
+        app:layout_constraintHorizontal_bias="0.151"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="88dp" />
+
+    <TextView
+        android:id="@+id/followerName"
+        android:layout_width="67dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="4dp"
+        android:text="Followers"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@+id/followers"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="226dp" />
+
+    <TextView
+        android:id="@+id/followingName"
+        android:layout_width="70dp"
+        android:layout_height="28dp"
+
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:text="Following"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/followerName"
+        app:layout_constraintTop_toBottomOf="@+id/following"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="122dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="12dp"
+
+        android:text="sajid shaikh bhuru"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="298dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/bio"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.132"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/botton_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/whitesmoke"
+        android:text="Edit Profile"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="171dp" />
+
+    <Button
+        android:id="@+id/btn_shareProfile"
+        android:layout_width="110dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/whitesmoke"
+        android:text="Share Profile"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/botton_edit"
+        app:layout_constraintHorizontal_bias="0.26"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/addfriend"
+        android:layout_width="28dp"
+        android:layout_height="30dp"
+
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/whitesmoke"
+        android:src="@drawable/friennd_add_24"
+        app:layout_constraintStart_toEndOf="@+id/botton_edit"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="2dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/partition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="283dp" />
+
+    <ImageView
+        android:id="@+id/ic_grid"
+        android:layout_width="44dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="56dp"
+        android:src="@drawable/ic_grid"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_shareProfile" />
+
+    <ImageView
+        android:id="@+id/ig_reels"
+        android:layout_width="44dp"
+        android:layout_height="30dp"
+        app:layout_constraintEnd_toStartOf="@+id/profile"
+        android:layout_marginBottom="4dp"
+        android:src="@drawable/baseline_video_library_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ig_post"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/tag"
+        android:layout_width="44dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="348dp"
+
+        android:layout_marginTop="56dp"
+        android:src="@drawable/tag"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_shareProfile" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/partition2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="323dp" />
+
+    <ImageView
+        android:id="@+id/ig_home"
+        android:layout_width="57dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        android:layout_marginBottom="4dp"
+        android:src="@drawable/ig_home"
+        app:layout_constraintEnd_toStartOf="@+id/ig_searc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/ig_searc"
+        android:layout_width="59dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="4dp"
+        android:src="@drawable/ig_search"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ig_post"
+        app:layout_constraintHorizontal_bias="0.283"
+        app:layout_constraintStart_toEndOf="@+id/ig_home"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/ig_post"
+        android:layout_width="55dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="4dp"
+        android:src="@drawable/add_post"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintEnd_toStartOf="@+id/ig_reels"
+        app:layout_constraintStart_toEndOf="@+id/ig_searc"
+         />
+
+    <ImageView
+        android:id="@+id/ig_reelss"
+        android:layout_width="44dp"
+        android:layout_height="30dp"
+        android:src="@drawable/baseline_video_library_24"
+        app:layout_constraintEnd_toStartOf="@+id/tag"
+        app:layout_constraintStart_toEndOf="@+id/ic_grid"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="291dp" />
+
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="44dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="15dp"
+        android:src="@drawable/demo_profile_image"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintStart_toEndOf="@id/ig_reels"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="4dp"
+         />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

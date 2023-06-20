@@ -1,0 +1,617 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".linkedln.linkedln_ui"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            >
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ProfileView2"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="15dp"
+                app:cornerRadius="50dp"
+                app:shapeAppearanceOverlay="@style/circleImageView"
+                app:srcCompat="@drawable/main_profile2" />
+
+            <EditText
+                android:id="@+id/Searchview2"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/edittxt"
+                android:drawableStart="@drawable/search_icons"
+                android:hint="@string/HintSearch"
+                android:inputType="textPersonName"
+                android:padding="8dp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <ImageView
+                android:id="@+id/MessageIcons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="2"
+                android:layout_gravity="center"
+                android:src="@drawable/message_icon"
+                />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="#3CA68585" />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/onlinedot"
+                    android:layout_width="11dp"
+                    android:layout_height="11dp"
+                    android:layout_marginTop="36dp"
+                    android:layout_marginStart="40dp"
+                    android:elevation="1dp"
+                    android:src="@drawable/onlinedot" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/PostView"
+                        android:layout_width="40dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        app:cornerRadius="50dp"
+                        app:shapeAppearance="@style/circleImageView"
+                        app:srcCompat="@drawable/linkedln_image" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/postName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:text="@string/UserName"
+                                android:textSize="14dp"
+                                android:textStyle="bold"
+                                tools:ignore="TextSizeCheck" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="@string/ConctionType"
+                                android:textColor="#6F000000"
+                                android:textSize="9sp"
+                                tools:ignore="SmallSp" />
+
+                        </LinearLayout>
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/position"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:layout_marginStart="16dp"
+                            android:text="@string/position"
+                            android:textSize="9sp"
+                            tools:ignore="SmallSp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/times"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start"
+                                android:layout_marginStart="16dp"
+                                android:text="@string/TimeAgo"
+                                android:textSize="9sp"
+                                tools:ignore="SmallSp" />
+                            <ImageView
+                                android:id="@+id/earth"
+                                android:layout_width="8dp"
+                                android:layout_height="8dp"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:src="@drawable/earth" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="13dp"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/vertical_icons" />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginEnd="14dp"
+                    android:text="@string/quates"
+                    android:textSize="10sp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    tools:ignore="SmallSp" />
+            </androidx.cardview.widget.CardView>
+            <ImageView
+                android:id="@+id/Postimage"
+                android:layout_width="match_parent"
+                android:layout_height="346dp"
+                android:src="@drawable/post2_demo"
+                android:scaleType="centerCrop"
+                />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardviewbottom1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/Postimage"
+                android:layout_marginTop="10dp"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_marginStart="5dp"
+                            android:layout_width="15dp"
+                            android:layout_height="18dp"
+                            android:layout_gravity="center"
+                            android:padding="1dp"
+                            android:src="@drawable/baseline_thumb_up_24"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/commentName"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"
+                            android:textSize="10sp"
+                            tools:ignore="SmallSp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="1dp"
+                        android:background="#85DCD8D8" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:padding="5dp"
+                        android:layout_marginStart="15dp"
+                        android:orientation="horizontal"
+                        android:baselineAligned="false">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:id="@+id/like1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/like" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="@string/like"
+                                android:textSize="12sp"
+                                android:layout_gravity="center"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:id="@+id/Comment1"
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/comments" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="@string/Comments"
+                                android:layout_gravity="center"
+                                android:textSize="12sp"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/repost1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/repost" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="@string/Repost"
+                                android:textSize="12sp"
+                                android:layout_gravity="center"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:id="@+id/send1"
+                                android:layout_width="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/baseline_send_24" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="@string/Send"
+                                android:textSize="12sp"
+                                android:layout_gravity="center"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#3CA68585"
+                />
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="11dp"
+                    android:layout_height="11dp"
+                    android:layout_marginTop="36dp"
+                    android:layout_marginStart="40dp"
+                    android:src="@drawable/onlinedot" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:elevation="1dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/PostView1"
+                        android:layout_width="36dp"
+                        android:layout_height="31dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        app:cornerRadius="50dp"
+                        app:shapeAppearance="@style/circleImageView"
+                        app:srcCompat="@drawable/linkedln_image" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/postName1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:text="@string/UserName"
+                                android:textSize="14dp"
+                                android:textStyle="bold"
+                                tools:ignore="TextSizeCheck" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:text="@string/ConctionType"
+                                android:textColor="#6F000000"
+                                android:textSize="9sp"
+                                tools:ignore="SmallSp" />
+
+                        </LinearLayout>
+
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/position1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:layout_marginStart="16dp"
+                            android:text="@string/position"
+                            android:textSize="9sp"
+                            tools:ignore="SmallSp" />
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/times1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start"
+                                android:layout_marginStart="16dp"
+                                android:text="@string/TimeAgo"
+                                android:textSize="9sp"
+                                tools:ignore="SmallSp" />
+
+                            <ImageView
+                                android:id="@+id/earth1"
+                                android:layout_width="8dp"
+                                android:layout_height="8dp"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:src="@drawable/earth" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="13dp"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/vertical_icons" />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/details1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginEnd="14dp"
+                    android:text="@string/quates"
+                    android:textSize="10sp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    tools:ignore="SmallSp" />
+            </androidx.cardview.widget.CardView>
+            <ImageView
+                android:id="@+id/Postimage1"
+                android:layout_width="match_parent"
+                android:layout_height="346dp"
+                android:src="@drawable/shubham"
+                android:scaleType="centerCrop"
+                />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardviewbottom2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/Postimage"
+                android:layout_marginTop="10dp"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_marginStart="5dp"
+                            android:layout_width="15dp"
+                            android:layout_height="18dp"
+                            android:layout_gravity="center"
+                            android:padding="1dp"
+                            android:src="@drawable/baseline_thumb_up_24"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/commentName"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"
+                            android:textSize="10sp"
+                            tools:ignore="SmallSp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="1dp"
+                        android:background="#85DCD8D8" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:padding="5dp"
+                        android:layout_marginStart="15dp"
+                        android:orientation="horizontal"
+                        android:baselineAligned="false">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:id="@+id/like2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/like" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="@string/like"
+                                android:textSize="12sp"
+                                android:layout_gravity="center"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:id="@+id/Comment2"
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/comments" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="@string/Comments"
+                                android:layout_gravity="center"
+                                android:textSize="12sp"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/repost2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/repost" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="@string/Repost"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:id="@+id/send12"
+                                android:layout_width="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/baseline_send_24" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="@string/Send"
+                                android:textSize="12sp"
+                                android:layout_gravity="center"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
