@@ -37,13 +37,13 @@ class peramids_riversed : AppCompatActivity() {
         // palindorme button handle
         btnpelindrome.setOnClickListener {
             var res = ""
-            for(i in textfield.text.toString()){
+            var input = textfield.text.toString()
+            for(i in input){
                 res = i+res
             }
-
-            val strRiverse =res
+            val strRiverse = res
 //            textview.text = strRiverse
-            if(strRiverse==textfield.text.toString().reversed()){
+            if(strRiverse==input){
                 textview.text = "Given string or number is pelindrome"
                 Toast.makeText(this,strRiverse, Toast.LENGTH_SHORT).show()
             }else{

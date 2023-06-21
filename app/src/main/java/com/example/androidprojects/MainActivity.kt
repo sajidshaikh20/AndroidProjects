@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.androidprojects.activity_life_cycle.firstactivity
 import com.example.androidprojects.healthform.healform_ui
 import com.example.androidprojects.instagram.instagram_ui
 import com.example.androidprojects.intent.intent_demo
@@ -23,9 +24,9 @@ class MainActivity : AppCompatActivity() {
         val nexthealthform = findViewById<MaterialButton>(R.id.healthformbtn)
         val nextlinkedln = findViewById<MaterialButton>(R.id.linkedlnbtn)
         val nextintent = findViewById<MaterialButton>(R.id.intentsbtn)
+        val phases_lc = findViewById<MaterialButton>(R.id.lifecycle)
 
         nextinsta.setOnClickListener {
-//            val navigatedemo = "Enter"
             callActivity()
         }
         nextPelindrom.setOnClickListener {
@@ -48,6 +49,11 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this,intent_demo::class.java)
             startActivity(intent)
         }
+        phases_lc.setOnClickListener {
+            val intent = Intent(this,firstactivity::class.java)
+            startActivity(intent)
+        }
+
 
 
     }
