@@ -7,4 +7,79 @@
     tools:context=".intent.intent_demo">
 
 
+    <EditText
+    android:id="@+id/actiondial"
+    android:layout_width="170dp"
+    android:layout_height="wrap_content"
+    android:autofillHints=""
+    android:background="#23C4464A"
+    android:hint="Enter the contact"
+        android:layout_marginLeft="30dp"
+    android:inputType="number"
+    android:padding="10dp"
+    app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Dialbutton"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50dp"
+        />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/Dialbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="15dp"
+        android:text="DialAction"
+        app:layout_constraintTop_toTopOf="@id/actiondial"
+        app:layout_constraintEnd_toEndOf="parent"
+         />
+    <EditText
+        android:id="@+id/actiongmail"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:background="#23C4464A"
+        android:hint="Enter Gmails"
+        android:layout_marginLeft="30dp"
+        android:padding="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Gmailaction"
+        app:layout_constraintTop_toBottomOf="@id/actiondial"
+        android:layout_marginTop="50dp"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/Gmailaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:text="GmailAction"
+        app:layout_constraintTop_toTopOf="@id/actiongmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <EditText
+        android:id="@+id/actionweb"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:background="#23C4464A"
+        android:hint="Enter link"
+        android:layout_marginLeft="30dp"
+        android:padding="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/webbutton"
+        app:layout_constraintTop_toBottomOf="@id/actiongmail"
+        android:layout_marginTop="50dp"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/webbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="15dp"
+        android:text="web action"
+        app:layout_constraintTop_toTopOf="@id/actionweb"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

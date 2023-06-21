@@ -38,6 +38,5 @@ class patterns : AppCompatActivity() {
 //            }
 //        }
 
-
     }
 }

@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
         val nexthealthform = findViewById<MaterialButton>(R.id.healthformbtn)
         val nextlinkedln = findViewById<MaterialButton>(R.id.linkedlnbtn)
         val nextintent = findViewById<MaterialButton>(R.id.intentsbtn)
+
         nextinsta.setOnClickListener {
 //            val navigatedemo = "Enter"
             callActivity()

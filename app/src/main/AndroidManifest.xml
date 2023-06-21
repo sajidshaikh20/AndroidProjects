@@ -16,16 +16,10 @@
             android:name=".intent.intent_demo"
             android:exported="false" />
         <activity
-            android:name=".intent_demo"
-            android:exported="false" />
-        <activity
             android:name=".linkedln.linkedln_ui"
             android:exported="false" />
         <activity
             android:name=".healthform.healform_ui"
-            android:exported="false" />
-        <activity
-            android:name=".healthform.healthform"
             android:exported="false" />
         <activity
             android:name=".patterns.patterns"
