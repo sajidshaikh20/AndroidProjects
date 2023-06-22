@@ -37,7 +37,7 @@ class peramids_riversed : AppCompatActivity() {
         // palindorme button handle
         btnpelindrome.setOnClickListener {
             var res = ""
-            var input = textfield.text.toString()
+            var input = textfield.text.toString().toLowerCase()
             for(i in input){
                 res = i+res
             }

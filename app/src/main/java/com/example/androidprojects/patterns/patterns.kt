@@ -18,6 +18,7 @@ class patterns : AppCompatActivity() {
         val btnperamid = findViewById<MaterialButton>(R.id.Peramids)
         val input = findViewById<TextInputEditText>(R.id.editText)
         val textViewshow = findViewById<TextView>(R.id.textView)
+        val btntriangle = findViewById<MaterialButton>(R.id.triangle)
         btnperamid.setOnClickListener {
             val inputText = input.text.toString()
             if (inputText.isNotBlank()) {
@@ -35,5 +36,19 @@ class patterns : AppCompatActivity() {
                 textViewshow.text = peramidAns.toString()
             }
         }
+        btntriangle.setOnClickListener {
+            val inputText = input.text.toString()
+
+
+        }
     }
 }
+//val ans = input.text.toString().toInt()
+//val triangle = StringBuilder()
+//for(i in 1 until ans){
+//    for(j in 1 until i){
+//        triangle.append(j)
+//    }
+//    triangle.append("\n")
+//}
+//ans2.text = triangle;
