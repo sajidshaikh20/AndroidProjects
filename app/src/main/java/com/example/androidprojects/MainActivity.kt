@@ -11,6 +11,7 @@ import com.example.androidprojects.intent.intent_demo
 import com.example.androidprojects.linkedln.linkedln_ui
 import com.example.androidprojects.patterns.patterns
 import com.example.androidprojects.peramids.peramids_riversed
+import com.example.androidprojects.recyclerview.recycleview
 import com.google.android.material.button.MaterialButton
 
 class MainActivity : AppCompatActivity() {
@@ -25,6 +26,7 @@ class MainActivity : AppCompatActivity() {
         val nextlinkedln = findViewById<MaterialButton>(R.id.linkedlnbtn)
         val nextintent = findViewById<MaterialButton>(R.id.intentsbtn)
         val phases_lc = findViewById<MaterialButton>(R.id.lifecycle)
+        val nextrecycleview = findViewById<MaterialButton>(R.id.recycle)
 
         nextinsta.setOnClickListener {
             callActivity()
@@ -53,8 +55,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this,firstactivity::class.java)
             startActivity(intent)
         }
-
-
+        nextrecycleview.setOnClickListener {
+            val intent = Intent(this, recycleview::class.java)
+            startActivity(intent)
+        }
 
     }
 

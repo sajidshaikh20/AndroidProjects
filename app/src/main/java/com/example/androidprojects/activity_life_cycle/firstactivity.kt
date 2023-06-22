@@ -50,7 +50,6 @@ class firstactivity : AppCompatActivity() {
         super.onRestart()
         Toast.makeText(this,"OnRestart", Toast.LENGTH_SHORT).show()
     }
-
     override fun onDestroy() {
         super.onDestroy()
         Toast.makeText(this,"OnDestroy", Toast.LENGTH_SHORT).show()
