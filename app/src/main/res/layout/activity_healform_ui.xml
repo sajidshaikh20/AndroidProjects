@@ -107,6 +107,25 @@
         />
 
 
+    <CheckBox
+        android:id="@+id/checkBoxM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="MAle"
+        app:layout_constraintStart_toStartOf="@id/GenderView"
+        app:layout_constraintTop_toBottomOf="@id/GenderView"
+         />
+    <CheckBox
+        android:id="@+id/checkBoxF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MAle"
+        android:layout_marginStart="15dp"
+        app:layout_constraintStart_toEndOf="@id/checkBoxM"
+        app:layout_constraintTop_toTopOf="@id/checkBoxM"
+        />
+
     <TextView
         android:id="@+id/Healthview"
         android:layout_width="wrap_content"
@@ -119,8 +138,33 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@id/GenderView"
-        app:layout_constraintTop_toBottomOf="@id/Male"
-
+        app:layout_constraintTop_toBottomOf="@id/checkBoxM"
+        />
+    <CheckBox
+        android:id="@+id/checkBoxFever"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fever"
+        app:layout_constraintStart_toStartOf="@id/Healthview"
+        app:layout_constraintTop_toBottomOf="@id/Healthview"
+        />
+    <CheckBox
+        android:id="@+id/checkBoxMaleria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Maleria"
+        app:layout_constraintTop_toBottomOf="@id/Healthview"
+        app:layout_constraintStart_toEndOf="@id/checkBoxFever"
+        android:layout_marginStart="15dp"
+        />
+    <CheckBox
+        android:id="@+id/checkBoxother"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Other"
+        app:layout_constraintTop_toBottomOf="@id/Healthview"
+        app:layout_constraintStart_toEndOf="@id/checkBoxMaleria"
+        android:layout_marginStart="15dp"
         />
 
     <com.google.android.material.button.MaterialButton
@@ -133,9 +177,7 @@
         android:layout_marginBottom="70dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@id/ResetButton"
-
         />
-
     <com.google.android.material.button.MaterialButton
         android:id="@+id/ResetButton"
         android:layout_width="wrap_content"
@@ -149,60 +191,7 @@
         />
 
 
-    <RadioButton
-        android:id="@+id/Male"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Male"
-        android:textSize="15sp"
-        app:layout_constraintStart_toStartOf="@+id/GenderView"
-        app:layout_constraintTop_toBottomOf="@id/GenderView"
-        tools:ignore="MissingConstraints" />
-
-    <RadioButton
-        android:id="@+id/Female"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="35dp"
-        android:text="Female"
-        android:textSize="15sp"
-        app:layout_constraintStart_toEndOf="@id/Male"
-        app:layout_constraintTop_toBottomOf="@id/GenderView"
-        tools:ignore="MissingConstraints" />
-    />
-    <RadioButton
-        android:id="@+id/fever"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Fever"
-        app:layout_constraintStart_toStartOf="@+id/Healthview"
-        app:layout_constraintTop_toBottomOf="@+id/Healthview"
-        android:textSize="15sp"
-        />
 
 
-    <RadioButton
-
-        android:id="@+id/Maleria"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="15dp"
-        android:text="Malaria"
-        android:textSize="15sp"
-        app:layout_constraintEnd_toStartOf="@+id/Cold"
-        app:layout_constraintStart_toEndOf="@+id/fever"
-        app:layout_constraintTop_toBottomOf="@id/Healthview" />
-
-    <RadioButton
-        android:id="@id/Cold"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Cold cough"
-        app:layout_constraintStart_toEndOf="@+id/Maleria"
-        app:layout_constraintTop_toBottomOf="@id/Healthview"
-        android:textSize="15sp"
-        android:layout_marginLeft="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
