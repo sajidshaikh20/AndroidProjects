@@ -8,21 +8,26 @@
     
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:elevation="1dp"
         app:layout_constraintStart_toStartOf="parent"
         android:backgroundTint="#07000000"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         >
+
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
+            android:layout_width="367dp"
             android:layout_height="match_parent">
 
             <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/studentprofile"
-                android:layout_width="25dp"
-                android:layout_height="23dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 app:cornerRadius="50dp"
@@ -35,44 +40,41 @@
                 android:id="@+id/Studentname"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Sajid Shaikh"
-                android:textSize="8sp"
                 android:layout_marginStart="15dp"
-                app:layout_constraintTop_toTopOf="@+id/studentprofile"
-                app:layout_constraintStart_toEndOf="@+id/studentprofile"
+                android:text="Sajid shaikh"
+                android:textSize="15sp"
                 android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/studentprofile"
+                app:layout_constraintTop_toTopOf="@+id/studentprofile"
                 tools:ignore="SmallSp" />
+
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/StudentAge"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="1dp"
                 android:text="Age"
-                android:textSize="5dp"
-                app:layout_constraintTop_toBottomOf="@id/Studentname"
+                android:textSize="10dp"
                 app:layout_constraintStart_toStartOf="@id/Studentname"
-                />
+                app:layout_constraintTop_toBottomOf="@id/Studentname" />
+
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/StudentDepart"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="1dp"
-                android:text="B-tech"
-                android:textSize="5dp"
                 android:layout_marginBottom="4dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/StudentAge"
+                android:text="B-tech"
+                android:textSize="10dp"
                 app:layout_constraintStart_toStartOf="@id/StudentAge"
-                />
+                app:layout_constraintTop_toBottomOf="@id/StudentAge" />
 
             <ImageView
                 android:id="@+id/studentedit"
                 android:layout_width="15dp"
                 android:layout_height="13dp"
-                app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginEnd="15dp"
-                app:layout_constraintTop_toTopOf="@id/Studentname"
-                android:src="@drawable/vertical_icons" />
+                android:src="@drawable/vertical_icons"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/Studentname" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.card.MaterialCardView>
