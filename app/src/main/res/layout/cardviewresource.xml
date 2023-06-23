@@ -52,9 +52,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Age"
-                android:textSize="10dp"
+                android:textSize="10sp"
                 app:layout_constraintStart_toStartOf="@id/Studentname"
-                app:layout_constraintTop_toBottomOf="@id/Studentname" />
+                app:layout_constraintTop_toBottomOf="@id/Studentname"
+                tools:ignore="TextSizeCheck" />
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/StudentDepart"
@@ -62,8 +63,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="4dp"
                 android:text="B-tech"
-
-                android:textSize="10dp"
+                android:textSize="10sp"
                 app:layout_constraintStart_toStartOf="@id/StudentAge"
                 app:layout_constraintTop_toBottomOf="@id/StudentAge" />
             <ImageView
