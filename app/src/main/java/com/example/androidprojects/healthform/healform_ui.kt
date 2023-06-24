@@ -1,29 +1,54 @@
 package com.example.androidprojects.healthform
 
+
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.EditText
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.example.androidprojects.R
-import com.example.androidprojects.peramids.peramids_riversed
 import com.google.android.material.button.MaterialButton
-import com.google.android.material.textfield.TextInputEditText
+
 
 class healform_ui : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_healform_ui)
+        //button
         val btnhealthdata = findViewById<MaterialButton>(R.id.SubmitButton)
-        val patientname = findViewById<EditText>(R.id.UserNameEdt)
-        val patientsurname = findViewById<EditText>(R.id.UserSurNameEdt)
-        val patientmail = findViewById<EditText>(R.id.UserSurEmail)
-        val patientnumber = findViewById<EditText>(R.id.UserContact)
-        val patientdob = findViewById<EditText>(R.id.UserDob)
+        val btnreset = findViewById<MaterialButton>(R.id.ResetButton)
 
+        //input field by the text field
+        var patientname = findViewById<EditText>(R.id.UserNameEdt)
+//        var patientsurname = findViewById<EditText>(R.id.UserSurNameEdt)
+        var patientmail = findViewById<EditText>(R.id.UserSurEmail)
+        var patientnumber = findViewById<EditText>(R.id.UserContact)
+        var patientdob = findViewById<EditText>(R.id.UserDob)
+
+        //data showing material text view
 
         btnhealthdata.setOnClickListener {
-            val intent = Intent(this, healthdatashow::class.java)
+//          namev : patientname.getText().toString().trim();
+
+
+            Toast.makeText(this,"Saved", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this@healform_ui, healthdatashow::class.java)
             startActivity(intent)
+        }
+
+
+
+//        btnhealthdata.setOnClickListener {
+//            Toast.makeText(this,"Saved", Toast.LENGTH_SHORT).show()
+//            val intent = Intent(this@healform_ui, healthdatashow::class.java)
+//            startActivity(intent)
+//        }
+        btnreset.setOnClickListener {
+            patientname.text?.clear()
+//            patientsurname.text.clear()
+            patientmail.text?.clear()
+            patientnumber.text?.clear()
+            patientdob.text?.clear()
         }
     }
 }

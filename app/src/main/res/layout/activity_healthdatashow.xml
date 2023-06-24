@@ -16,7 +16,6 @@
         app:layout_constraintStart_toStartOf="parent"
         android:layout_height="wrap_content"
         >
-
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -58,7 +57,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="60dp"
-                android:text="Sajid Shaikh"
+                android:text="Sajid shaikh"
                 android:textStyle="bold"
                 app:layout_constraintStart_toEndOf="@id/patientname"
                 app:layout_constraintTop_toTopOf="@id/patientname"
@@ -142,9 +141,6 @@
                 app:layout_constraintStart_toStartOf="@id/edtpatientgender"
                 app:layout_constraintTop_toBottomOf="@id/edtpatientgender"
                 />
-
         </androidx.constraintlayout.widget.ConstraintLayout>
-
     </com.google.android.material.card.MaterialCardView>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
