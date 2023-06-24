@@ -61,7 +61,6 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
-
     private fun callActivity() {
         val intent = Intent(this,instagram_ui::class.java)
         startActivity(intent)

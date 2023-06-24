@@ -105,8 +105,6 @@
         app:layout_constraintTop_toBottomOf="@id/UserDob"
         android:layout_marginTop="20dp"
         />
-
-
     <CheckBox
         android:id="@+id/checkBoxM"
         android:layout_width="wrap_content"
@@ -120,7 +118,7 @@
         android:id="@+id/checkBoxF"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="MAle"
+        android:text="Female"
         android:layout_marginStart="15dp"
         app:layout_constraintStart_toEndOf="@id/checkBoxM"
         app:layout_constraintTop_toTopOf="@id/checkBoxM"
