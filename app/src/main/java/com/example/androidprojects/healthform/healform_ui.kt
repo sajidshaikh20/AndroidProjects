@@ -117,8 +117,14 @@ class healform_ui : AppCompatActivity() {
             intent.putExtra("Dob_key",dobshow)
             startActivity(intent)
         }
+
+        // reset button
         btnreset.setOnClickListener {
-            checkBoxmale.isChecked
+            checkBoxmale.isChecked = false
+            checkBoxFemale.isChecked = false
+            checkBoxfever.isChecked = false
+            checkBoxmaleria.isChecked = false
+            checkbocother.isChecked = false
             patientname.text?.clear()
             patientsurname.text?.clear()
             patientmail.text?.clear()
