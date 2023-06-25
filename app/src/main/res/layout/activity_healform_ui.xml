@@ -6,105 +6,140 @@
     android:layout_height="match_parent"
     tools:context=".healthform.healform_ui">
 
-
     <TextView
         android:id="@+id/Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Title"
         android:layout_marginTop="10dp"
-        android:textSize="30sp"
+        android:text="@string/Title"
         android:textColor="#D70505"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/UserNameEdt"
-        android:layout_width="match_parent"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/usernaemlayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:autofillHints=""
-        android:background="#23C4464A"
-        android:hint="@string/HintName"
-        android:inputType="textPersonName"
-        android:padding="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/Title"
-        android:layout_marginRight="25dp"
-        android:layout_marginLeft="25dp"
-        tools:layout_editor_absoluteX="25dp" />
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="25dp"
+        android:hint="Enter name"
+        android:padding="5dp"
+        app:boxStrokeColor="#F70303"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Title">
 
-    <EditText
-        android:id="@+id/UserSurNameEdt"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/UserNameEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/usersurlayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/UserNameEdt"
-        android:inputType="textPersonName"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
         android:hint="@string/HintSurName"
-        android:background="#23C4464A"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="25dp"
-        android:layout_marginLeft="25dp"
-        android:padding="8dp"
-        android:autofillHints="" />
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        app:boxStrokeColor="#F70303"
 
-    <EditText
-        android:id="@+id/UserSurEmail"
+        app:layout_constraintTop_toBottomOf="@+id/usernaemlayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/UserSurNameEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/usermaillayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/UserSurNameEdt"
-        android:inputType="textEmailAddress"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
         android:hint="@string/HintEmail"
-        android:background="#23C4464A"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="25dp"
-        android:layout_marginLeft="25dp"
-        android:padding="8dp"
-        android:autofillHints="" />
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        app:boxStrokeColor="#F70303"
 
+        app:layout_constraintTop_toBottomOf="@+id/usersurlayout">
 
-    <EditText
-        android:id="@+id/UserContact"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/UserSurEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/usernumberlayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/UserSurEmail"
-        android:inputType="number"
-        android:hint="@string/HintContact"
-        android:background="#23C4464A"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="25dp"
         android:layout_marginLeft="25dp"
-        android:padding="8dp"
-        android:autofillHints="" />
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:hint="Number"
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        app:boxStrokeColor="#F70303"
+        app:layout_constraintTop_toBottomOf="@+id/usermaillayout">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/UserContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <EditText
-        android:id="@+id/UserDob"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/UserDoblayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/UserContact"
-        android:inputType="date"
-        android:hint="@string/HintDob"
-        android:background="#23C4464A"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="25dp"
         android:layout_marginLeft="25dp"
-        android:padding="8dp"
-        android:autofillHints="" />
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:hint="DOB"
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        app:boxStrokeColor="#F70303"
+        app:layout_constraintTop_toBottomOf="@+id/usernumberlayout">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/UserDob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
     <TextView
         android:id="@+id/GenderView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/genderTitle"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/corner_radius"
         android:padding="4dp"
+        android:text="@string/genderTitle"
+        android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:background="#D70505"
-        android:textColor="@color/white"
-        app:layout_constraintStart_toStartOf="@id/UserSurNameEdt"
-        app:layout_constraintTop_toBottomOf="@id/UserDob"
-        android:layout_marginTop="20dp"
-        />
+        app:layout_constraintStart_toStartOf="@id/usernaemlayout"
+        app:layout_constraintTop_toBottomOf="@id/UserDoblayout" />
+
     <CheckBox
         android:id="@+id/checkBoxM"
         android:layout_width="wrap_content"
@@ -112,58 +147,56 @@
         android:layout_marginTop="15dp"
         android:text="MAle"
         app:layout_constraintStart_toStartOf="@id/GenderView"
-        app:layout_constraintTop_toBottomOf="@id/GenderView"
-         />
+        app:layout_constraintTop_toBottomOf="@id/GenderView" />
+
     <CheckBox
         android:id="@+id/checkBoxF"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Female"
         android:layout_marginStart="15dp"
+        android:text="Female"
         app:layout_constraintStart_toEndOf="@id/checkBoxM"
-        app:layout_constraintTop_toTopOf="@id/checkBoxM"
-        />
+        app:layout_constraintTop_toTopOf="@id/checkBoxM" />
 
     <TextView
         android:id="@+id/Healthview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:background="#D70505"
-        android:text="@string/HealthTitle"
+        android:background="@drawable/corner_radius"
         android:padding="4dp"
+        android:text="@string/HealthTitle"
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@id/GenderView"
-        app:layout_constraintTop_toBottomOf="@id/checkBoxM"
-        />
+        app:layout_constraintTop_toBottomOf="@id/checkBoxM" />
+
     <CheckBox
         android:id="@+id/checkBoxFever"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Fever"
         app:layout_constraintStart_toStartOf="@id/Healthview"
-        app:layout_constraintTop_toBottomOf="@id/Healthview"
-        />
+        app:layout_constraintTop_toBottomOf="@id/Healthview" />
+
     <CheckBox
         android:id="@+id/checkBoxMaleria"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Maleria"
-        app:layout_constraintTop_toBottomOf="@id/Healthview"
-        app:layout_constraintStart_toEndOf="@id/checkBoxFever"
         android:layout_marginStart="15dp"
-        />
+        android:text="Maleria"
+        app:layout_constraintStart_toEndOf="@id/checkBoxFever"
+        app:layout_constraintTop_toBottomOf="@id/Healthview" />
+
     <CheckBox
         android:id="@+id/checkBoxother"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Other"
-        app:layout_constraintTop_toBottomOf="@id/Healthview"
-        app:layout_constraintStart_toEndOf="@id/checkBoxMaleria"
         android:layout_marginStart="15dp"
-        />
+        android:text="Other"
+        app:layout_constraintStart_toEndOf="@id/checkBoxMaleria"
+        app:layout_constraintTop_toBottomOf="@id/Healthview" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/SubmitButton"
@@ -171,11 +204,10 @@
         android:layout_height="wrap_content"
         android:backgroundTint="#2D9106"
         android:text="@string/SubmitTitle"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="70dp"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@id/ResetButton"
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxFever" />
+
     <com.google.android.material.button.MaterialButton
         android:id="@+id/ResetButton"
         android:layout_width="wrap_content"
@@ -183,13 +215,8 @@
         android:backgroundTint="#2D9106"
         android:text="@string/ResetTitle"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/SubmitButton"
-        android:layout_marginBottom="70dp"
+        app:layout_constraintTop_toTopOf="@id/SubmitButton"
         />
-
-
-
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
+

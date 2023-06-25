@@ -15,7 +15,7 @@ class healthdatashow : AppCompatActivity() {
         var showNum = findViewById<MaterialTextView>(R.id.edtpatientnumber)
         var showdob = findViewById<MaterialTextView>(R.id.edtpatientdob)
         var shhowGender = findViewById<MaterialTextView>(R.id.edtpatientgender)
-
+        var healthissueshw = findViewById<MaterialTextView>(R.id.edtpatientissue)
 
          var gender : String = intent.getStringExtra("Gender").toString()
          shhowGender.text = gender
@@ -27,5 +27,9 @@ class healthdatashow : AppCompatActivity() {
         showNum.text = Number
         var dob : String = intent.getStringExtra("Dob_key").toString()
         showdob.text = dob
+        var health : String = intent.getStringExtra("health_issue").toString()
+        healthissueshw.text = health
+
+
     }
 }
