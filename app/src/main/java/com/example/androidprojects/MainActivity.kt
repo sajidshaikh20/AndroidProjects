@@ -27,6 +27,7 @@ class MainActivity : AppCompatActivity() {
         val nextintent = findViewById<MaterialButton>(R.id.intentsbtn)
         val phases_lc = findViewById<MaterialButton>(R.id.lifecycle)
         val nextrecycleview = findViewById<MaterialButton>(R.id.recycle)
+        val nextwhatsapp = findViewById<MaterialButton>(R.id.whatsapp)
 
         nextinsta.setOnClickListener {
             callActivity()

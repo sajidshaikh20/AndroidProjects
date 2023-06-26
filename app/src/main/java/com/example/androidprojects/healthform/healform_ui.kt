@@ -114,8 +114,8 @@ class healform_ui : AppCompatActivity() {
             intent.putExtra("Name_key", nameshow)
             intent.putExtra("Surname_key", surnameshow)
             intent.putExtra("contact_key", numbershow)
-            intent.putExtra("Dob_key",dobshow)
-            startActivity(intent)
+            intent.putExtra("Dob_key",)
+            startActivity(intent)dobshow
         }
 
         // reset button
