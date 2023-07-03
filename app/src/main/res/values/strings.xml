@@ -57,5 +57,14 @@
     <string name="commentName">Sajid Shaikh and 7 others </string>
     <string name="pelindrome">Pelindrome</string>
     <string name="floating_action_button">Floating Action button</string>
+    <string name="details_title">Personal details</string>
+    <string name="NameHint">Enter name</string>
+
+    <string name="hintdob">DOB</string>
+    <string name="passwordhint">password</string>
+    <string name="ConPasswordHint">Confrim Password</string>
+    <string name="checkmale">Male</string>
+    <string name="checkFemale">Female</string>
+    <string name="hobiesTitle">Hobbies</string>
 
 </resources>
