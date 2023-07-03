@@ -12,6 +12,7 @@ import com.example.androidprojects.linkedln.linkedln_ui
 import com.example.androidprojects.patterns.patterns
 import com.example.androidprojects.peramids.peramids_riversed
 import com.example.androidprojects.recyclerview.recycleview
+import com.example.androidprojects.task.screens.homepage
 import com.google.android.material.button.MaterialButton
 
 class MainActivity : AppCompatActivity() {
@@ -19,6 +20,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
         val nextinsta = findViewById<MaterialButton>(R.id.instagrambtn)
         val nextPelindrom = findViewById<MaterialButton>(R.id.Pelindromebtn)
         val  nextpattern = findViewById<MaterialButton>(R.id.patternbtn)
@@ -27,7 +29,7 @@ class MainActivity : AppCompatActivity() {
         val nextintent = findViewById<MaterialButton>(R.id.intentsbtn)
         val phases_lc = findViewById<MaterialButton>(R.id.lifecycle)
         val nextrecycleview = findViewById<MaterialButton>(R.id.recycle)
-        val nextwhatsapp = findViewById<MaterialButton>(R.id.whatsapp)
+        val nexttask = findViewById<MaterialButton>(R.id.Task_demo)
 
         nextinsta.setOnClickListener {
             callActivity()
@@ -60,7 +62,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, recycleview::class.java)
             startActivity(intent)
         }
-
+        nexttask.setOnClickListener {
+            val intent = Intent(this, homepage::class.java)
+            startActivity(intent)
+        }
     }
     private fun callActivity() {
         val intent = Intent(this,instagram_ui::class.java)

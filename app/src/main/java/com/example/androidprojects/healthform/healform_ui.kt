@@ -72,7 +72,6 @@ class healform_ui : AppCompatActivity() {
                 checkBoxmaleria.isChecked = false
             }
         }
-
         btnhealthdata.setOnClickListener {
 //          namev : patientname.getText().toString().trim();
 
@@ -84,7 +83,6 @@ class healform_ui : AppCompatActivity() {
 
             val dobshow : String = patientdob.getText().toString()
 //            intent.putExtra("dob",)
-
             Toast.makeText(this,"Saved", Toast.LENGTH_SHORT).show()
             val intent = Intent(this@healform_ui, healthdatashow::class.java)
 
@@ -97,9 +95,6 @@ class healform_ui : AppCompatActivity() {
             } else{
                 intent.putExtra("Gender", "other")
             }
-
-
-
 
            // health issue health selection
             if (checkBoxfever.isChecked){
@@ -114,10 +109,9 @@ class healform_ui : AppCompatActivity() {
             intent.putExtra("Name_key", nameshow)
             intent.putExtra("Surname_key", surnameshow)
             intent.putExtra("contact_key", numbershow)
-            intent.putExtra("Dob_key",)
-            startActivity(intent)dobshow
+            intent.putExtra("Dob_key",dobshow)
+            startActivity(intent)
         }
-
         // reset button
         btnreset.setOnClickListener {
             checkBoxmale.isChecked = false
@@ -132,8 +126,4 @@ class healform_ui : AppCompatActivity() {
             patientdob.text?.clear()
         }
     }
-
-
-
-
 }
