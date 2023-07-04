@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_height="wrap_content"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp">
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/Nameheading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Name :"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/edtUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:text="Sajid Shaikh"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/Nameheading"
+                app:layout_constraintTop_toTopOf="@id/Nameheading"
+                />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/Usernum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Number:"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/Nameheading"
+                app:layout_constraintTop_toBottomOf="@id/Nameheading" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/edtUserNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7415311601"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/edtUserName"
+                app:layout_constraintTop_toBottomOf="@id/edtUserName"
+                />
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/UserMail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mail:"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/Nameheading"
+                app:layout_constraintTop_toBottomOf="@+id/Usernum" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/edtUserMail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sajid20shaikh@gmail.com"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/edtUserNumber"
+                app:layout_constraintTop_toBottomOf="@id/edtUserNumber"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

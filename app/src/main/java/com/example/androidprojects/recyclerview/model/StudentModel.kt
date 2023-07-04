@@ -7,5 +7,4 @@ data class StudentModel (
      val age : Int,
      val department : String,
 
-
     )

@@ -98,9 +98,6 @@ class healform_ui : AppCompatActivity() {
                 intent.putExtra("Gender", "other")
             }
 
-
-
-
            // health issue health selection
             if (checkBoxfever.isChecked){
                 intent.putExtra("health_issue", "Fever")

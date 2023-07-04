@@ -66,5 +66,9 @@
     <string name="checkmale">Male</string>
     <string name="checkFemale">Female</string>
     <string name="hobiesTitle">Hobbies</string>
+    <string name="chessCheckBox">Chess</string>
+    <string name="cookCheckBox">Cooking</string>
+    <string name="travelCheckBox">Travel</string>
+    <string name="DanceCheckBox">Dance</string>
 
 </resources>
