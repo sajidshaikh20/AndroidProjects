@@ -74,7 +74,7 @@ class DetailsActivity : AppCompatActivity() {
             }
         }
 
-+-
+
         //submit button
         submitBtn.setOnClickListener {
 
