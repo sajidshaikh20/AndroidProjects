@@ -60,7 +60,7 @@ class intent_demo : AppCompatActivity() {
             
         }
         btnweb.setOnClickListener{
-            var baseurl = webinput.text.toString()
+            val baseurl = webinput.text.toString()
             isValidUrl(baseurl)
             if(isValidUrl(baseurl)){
                 val intent = Intent(Intent.ACTION_WEB_SEARCH)
@@ -88,7 +88,4 @@ class intent_demo : AppCompatActivity() {
         val m = p.matcher(url.lowercase(Locale.getDefault()))
         return m.matches()
     }
-
-
-
 }

@@ -111,7 +111,7 @@
             app:endIconDrawable="@drawable/ic_date"
             app:layout_constraintTop_toBottomOf="@+id/contactLayout">
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/UserDob"
+                android:id="@+id/UserDobTextfield"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="date" />
@@ -194,7 +194,7 @@
 
 
         <CheckBox
-            android:id="@+id/checkBoxchess"
+            android:id="@+id/cbChess"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/chessCheckBox"
@@ -204,32 +204,32 @@
             android:layout_marginEnd="8dp" />
 
         <CheckBox
-            android:id="@+id/checkBoxcook"
+            android:id="@+id/cbcook"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/cookCheckBox"
-            app:layout_constraintStart_toEndOf="@id/checkBoxchess"
-            app:layout_constraintTop_toTopOf="@id/checkBoxchess"
+            app:layout_constraintStart_toEndOf="@id/cbChess"
+            app:layout_constraintTop_toTopOf="@id/cbChess"
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp" />
 
         <CheckBox
-            android:id="@+id/checkBoxTravel"
+            android:id="@+id/cbTravel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/travelCheckBox"
-            app:layout_constraintStart_toEndOf="@id/checkBoxcook"
-            app:layout_constraintTop_toTopOf="@id/checkBoxchess"
+            app:layout_constraintStart_toEndOf="@id/cbcook"
+            app:layout_constraintTop_toTopOf="@id/cbcook"
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp" />
 
         <CheckBox
-            android:id="@+id/checkBoxPubg"
+            android:id="@+id/cbDance"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/DanceCheckBox"
-            app:layout_constraintStart_toEndOf="@id/checkBoxTravel"
-            app:layout_constraintTop_toTopOf="@id/checkBoxchess"
+            app:layout_constraintStart_toEndOf="@id/cbTravel"
+            app:layout_constraintTop_toTopOf="@id/cbTravel"
             android:layout_marginStart="8dp" />
 
         <com.google.android.material.button.MaterialButton
@@ -242,7 +242,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/checkBoxchess"
+            app:layout_constraintTop_toBottomOf="@id/cbChess"
             />
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -18,7 +18,7 @@
             android:name=".task.screens.DetailsActivity"
             android:exported="false" />
         <activity
-            android:name=".task.screens.homepage"
+            android:name=".task.screens.HomePage"
             android:exported="false" />
         <activity
             android:name=".healthform.healthdatashow"
@@ -55,7 +55,6 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

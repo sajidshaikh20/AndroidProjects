@@ -10,6 +10,8 @@ class healthdatashow : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_healthdatashow)
+
+
         val showPname  = findViewById<MaterialTextView>(R.id.edtpatientname)
         val showSname = findViewById<MaterialTextView>(R.id.edtpatientSname)
         val showNum = findViewById<MaterialTextView>(R.id.edtpatientnumber)
@@ -29,5 +31,6 @@ class healthdatashow : AppCompatActivity() {
         showdob.text = dob
         val health : String = intent.getStringExtra("health_issue").toString()
         healthissueshw.text = health
+
     }
 }

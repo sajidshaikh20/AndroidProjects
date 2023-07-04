@@ -12,7 +12,7 @@ import com.example.androidprojects.linkedln.linkedln_ui
 import com.example.androidprojects.patterns.patterns
 import com.example.androidprojects.peramids.peramids_riversed
 import com.example.androidprojects.recyclerview.recycleview
-import com.example.androidprojects.task.screens.homepage
+import com.example.androidprojects.task.screens.HomePage
 import com.google.android.material.button.MaterialButton
 
 class MainActivity : AppCompatActivity() {
@@ -63,7 +63,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
         nexttask.setOnClickListener {
-            val intent = Intent(this, homepage::class.java)
+            val intent = Intent(this, HomePage::class.java)
             startActivity(intent)
         }
     }

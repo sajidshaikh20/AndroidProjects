@@ -65,7 +65,6 @@ class healform_ui : AppCompatActivity() {
                 checkbocother.isChecked = false
             }
         }
-
         checkbocother.setOnCheckedChangeListener { _, isChecked ->
             if (isChecked) {
                 checkBoxfever.isChecked = false
@@ -83,8 +82,8 @@ class healform_ui : AppCompatActivity() {
             val numbershow: String = patientnumber.getText().toString()
 
             val dobshow : String = patientdob.getText().toString()
-//            intent.putExtra("dob",)
 
+//            intent.putExtra("dob",)
             Toast.makeText(this,"Saved", Toast.LENGTH_SHORT).show()
             val intent = Intent(this@healform_ui, healthdatashow::class.java)
 
@@ -114,7 +113,6 @@ class healform_ui : AppCompatActivity() {
             intent.putExtra("Dob_key",dobshow)
             startActivity(intent)
         }
-
         // reset button
         btnreset.setOnClickListener {
             checkBoxmale.isChecked = false
