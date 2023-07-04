@@ -1,6 +1,5 @@
 package com.example.androidprojects.healthform
 
-
 import android.content.Intent
 import android.os.Bundle
 import android.widget.CheckBox
@@ -11,8 +10,6 @@ import com.example.androidprojects.R
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
-
-
 class healform_ui : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,22 +19,23 @@ class healform_ui : AppCompatActivity() {
         val btnreset = findViewById<MaterialButton>(R.id.ResetButton)
 
         //input field by the text field
-        var patientname = findViewById<TextInputEditText>(R.id.UserNameEdt)
-        var patientsurname = findViewById<TextInputEditText>(R.id.UserSurNameEdt)
-        var patientmail = findViewById<TextInputEditText>(R.id.UserSurEmail)
-        var patientnumber = findViewById<TextInputEditText>(R.id.UserContact)
-        var patientdob = findViewById<EditText>(R.id.UserDob)
+        val patientname = findViewById<TextInputEditText>(R.id.UserNameEdt)
+        val patientsurname = findViewById<TextInputEditText>(R.id.UserSurNameEdt)
+        val patientmail = findViewById<TextInputEditText>(R.id.UserSurEmail)
+        val patientnumber = findViewById<TextInputEditText>(R.id.UserContact)
+        val patientdob = findViewById<EditText>(R.id.UserDob)
 
         //data showing material text view
 
-        var checkBoxmale = findViewById<CheckBox>(R.id.checkBoxM)
-        var checkBoxFemale  = findViewById<CheckBox>(R.id.checkBoxF)
+        val checkBoxmale = findViewById<CheckBox>(R.id.checkBoxM)
+        val checkBoxFemale  = findViewById<CheckBox>(R.id.checkBoxF)
 
 
         // fever check box find view id se
-        var checkBoxfever = findViewById<CheckBox>(R.id.checkBoxFever)
-        var checkBoxmaleria = findViewById<CheckBox>(R.id.checkBoxMaleria)
-        var checkbocother  = findViewById<CheckBox>(R.id.checkBoxother)
+        val checkBoxfever = findViewById<CheckBox>(R.id.checkBoxFever)
+        val checkBoxmaleria = findViewById<CheckBox>(R.id.checkBoxMaleria)
+        val checkbocother  = findViewById<CheckBox>(R.id.checkBoxother)
+
 
 
         // gender check box
@@ -58,7 +56,6 @@ class healform_ui : AppCompatActivity() {
                 checkbocother.isChecked = false
             }
         }
-
         checkBoxmaleria.setOnCheckedChangeListener { _, isChecked ->
             if (isChecked) {
                 checkBoxfever.isChecked = false
@@ -132,8 +129,5 @@ class healform_ui : AppCompatActivity() {
             patientdob.text?.clear()
         }
     }
-
-
-
 
 }
