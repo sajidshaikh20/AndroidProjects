@@ -1,73 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".healthform.healform_ui">
-    <androidx.constraintlayout.widget.ConstraintLayout
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    tools:context=".task.screens.DetailsActivity">
     <TextView
-        android:id="@+id/Title"
+        android:id="@+id/Heading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="@string/Title"
-        android:textColor="#D70505"
+        android:text="@string/details_title"
+        android:textColor="@color/black"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/usernaemlayout"
+        android:id="@+id/namelayout"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="25dp"
-        android:hint="Enter name"
+        android:hint="@string/NameHint"
         android:padding="5dp"
-        app:boxStrokeColor="#F70303"
+        app:boxStrokeColor="@color/red"
+        app:endIconMode="custom"
+        app:endIconDrawable="@drawable/ic_person"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Title">
+        app:layout_constraintTop_toBottomOf="@+id/Heading">
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/UserNameEdt"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"/>
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/usersurlayout"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="25dp"
-        android:hint="@string/HintSurName"
-        android:inputType="textPersonName"
-        android:padding="5dp"
-        app:boxStrokeColor="#F70303"
-
-        app:layout_constraintTop_toBottomOf="@+id/usernaemlayout">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/UserSurNameEdt"
+            android:id="@+id/NameTextField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPersonName" />
     </com.google.android.material.textfield.TextInputLayout>
-
-
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/usermaillayout"
+        android:id="@+id/maillayout"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -77,50 +51,53 @@
         android:hint="@string/HintEmail"
         android:inputType="textPersonName"
         android:padding="5dp"
-        app:boxStrokeColor="#F70303"
-
-        app:layout_constraintTop_toBottomOf="@+id/usersurlayout">
-
+        app:boxStrokeColor="@color/red"
+        app:endIconMode="custom"
+        app:endIconDrawable="@drawable/mail"
+        app:layout_constraintTop_toBottomOf="@+id/namelayout">
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/UserSurEmail"
+            android:id="@+id/mailTextField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress" />
     </com.google.android.material.textfield.TextInputLayout>
-
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/usernumberlayout"
+        android:id="@+id/contactLayout"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="25dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="25dp"
-        android:hint="Number"
+        android:hint="@string/HintContact"
         android:inputType="textPersonName"
         android:padding="5dp"
-        app:boxStrokeColor="#F70303"
-        app:layout_constraintTop_toBottomOf="@+id/usermaillayout">
+        app:boxStrokeColor="@color/red"
+        app:endIconMode="custom"
+        app:endIconDrawable="@drawable/ic_contact"
+        app:layout_constraintTop_toBottomOf="@+id/maillayout">
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/UserContact"
+            android:id="@+id/contactTextField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="number" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/UserDoblayout"
+        android:id="@+id/Doblayout"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="25dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="25dp"
-        android:hint="DOB"
+        android:hint="@string/hintdob"
         android:inputType="textPersonName"
         android:padding="5dp"
-        app:boxStrokeColor="#F70303"
-        app:layout_constraintTop_toBottomOf="@+id/usernumberlayout">
+        app:boxStrokeColor="@color/red"
+        app:endIconMode="custom"
+        app:endIconDrawable="@drawable/ic_date"
+        app:layout_constraintTop_toBottomOf="@+id/contactLayout">
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/UserDob"
             android:layout_width="match_parent"
@@ -128,95 +105,113 @@
             android:inputType="date" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <TextView
-        android:id="@+id/GenderView"
-        android:layout_width="wrap_content"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passworLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/corner_radius"
-        android:padding="4dp"
-        android:text="@string/genderTitle"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@id/usernaemlayout"
-        app:layout_constraintTop_toBottomOf="@id/UserDoblayout" />
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:hint="@string/passwordhint"
+        android:inputType="textPersonName"
+        android:padding="1dp"
+        app:boxStrokeColor="@color/red"
+        app:counterEnabled="true"
+        app:counterMaxLength="8"
+        app:passwordToggleEnabled="true"
+        app:layout_constraintTop_toBottomOf="@+id/Doblayout">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Confirmplayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:hint="@string/ConPasswordHint"
+        android:inputType="textPersonName"
+        android:padding="1dp"
+        app:boxStrokeColor="@color/red"
+        app:counterEnabled="true"
+        app:counterMaxLength="8"
+        app:passwordToggleEnabled="true"
+        app:layout_constraintTop_toBottomOf="@+id/passworLayout">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/confirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <CheckBox
-        android:id="@+id/checkBoxM"
+        android:id="@+id/malecheckbox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="MAle"
-        app:layout_constraintStart_toStartOf="@id/GenderView"
-        app:layout_constraintTop_toBottomOf="@id/GenderView" />
-
+        android:text="@string/checkmale"
+        app:layout_constraintStart_toStartOf="@id/Confirmplayout"
+        app:layout_constraintTop_toBottomOf="@id/Confirmplayout" />
     <CheckBox
-        android:id="@+id/checkBoxF"
+        android:id="@+id/femalecheckbox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
-        android:text="Female"
-        app:layout_constraintStart_toEndOf="@id/checkBoxM"
-        app:layout_constraintTop_toTopOf="@id/checkBoxM" />
+        android:text="@string/checkFemale"
+        app:layout_constraintStart_toEndOf="@id/malecheckbox"
+        app:layout_constraintTop_toBottomOf="@id/Confirmplayout" />
+
+
     <TextView
         android:id="@+id/Healthview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:background="@drawable/corner_radius"
         android:padding="4dp"
-        android:text="@string/HealthTitle"
-        android:textColor="@color/white"
+        android:text="@string/hobiesTitle"
+        android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@id/GenderView"
-        app:layout_constraintTop_toBottomOf="@id/checkBoxM" />
+        app:layout_constraintStart_toStartOf="@id/malecheckbox"
+        app:layout_constraintTop_toBottomOf="@id/malecheckbox" />
+
 
     <CheckBox
-        android:id="@+id/checkBoxFever"
+        android:id="@+id/checkBoxchess"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fever"
+        android:text="chess"
         app:layout_constraintStart_toStartOf="@id/Healthview"
         app:layout_constraintTop_toBottomOf="@id/Healthview" />
 
     <CheckBox
-        android:id="@+id/checkBoxMaleria"
+        android:id="@+id/checkBoxcook"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:text="Maleria"
-        app:layout_constraintStart_toEndOf="@id/checkBoxFever"
-        app:layout_constraintTop_toBottomOf="@id/Healthview" />
+        android:text="Cooking"
+        app:layout_constraintStart_toEndOf="@id/checkBoxchess"
+        app:layout_constraintTop_toTopOf="@id/checkBoxchess" />
 
     <CheckBox
-        android:id="@+id/checkBoxother"
+        android:id="@+id/checkBoxTravel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:text="Other"
-        app:layout_constraintStart_toEndOf="@id/checkBoxMaleria"
-        app:layout_constraintTop_toBottomOf="@id/Healthview" />
+        android:text="Travel"
+        app:layout_constraintStart_toEndOf="@id/checkBoxcook"
+        app:layout_constraintTop_toTopOf="@id/checkBoxchess" />
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/SubmitButton"
+    <CheckBox
+        android:id="@+id/checkBoxPubg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#2D9106"
-        android:text="@string/SubmitTitle"
-        app:layout_constraintEnd_toStartOf="@id/ResetButton"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBoxFever" />
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/ResetButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#2D9106"
-        android:text="@string/ResetTitle"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/SubmitButton"
-        app:layout_constraintTop_toTopOf="@id/SubmitButton"
-        />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</ScrollView>
+        android:text="pubg"
+        app:layout_constraintStart_toEndOf="@id/checkBoxTravel"
+        app:layout_constraintTop_toTopOf="@id/checkBoxchess" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

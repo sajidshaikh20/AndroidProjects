@@ -42,7 +42,7 @@
     //linkedln
 
     <string name="HintSearch">Search</string>
-    <string name="UserName">Shivani Yadav . </string>
+    <string name="UserName">Sajid Shaikh</string>
     <string name="ConctionType">1st</string>
     <string name="quates">We\'re hiring a new FLUTTER DEVELOPER FRESHER INTERN(unpaid) in india.Apply today or share this post with your network</string>
     <string name="title_activity_second">activity_second</string>
@@ -55,5 +55,16 @@
     <string name="NextScreen">NextScreen</string>
     <string name="send">Send</string>
     <string name="commentName">Sajid Shaikh and 7 others </string>
+    <string name="pelindrome">Pelindrome</string>
+    <string name="floating_action_button">Floating Action button</string>
+    <string name="details_title">Personal details</string>
+    <string name="NameHint">Enter name</string>
+
+    <string name="hintdob">DOB</string>
+    <string name="passwordhint">password</string>
+    <string name="ConPasswordHint">Confrim Password</string>
+    <string name="checkmale">Male</string>
+    <string name="checkFemale">Female</string>
+    <string name="hobiesTitle">Hobbies</string>
 
 </resources>
