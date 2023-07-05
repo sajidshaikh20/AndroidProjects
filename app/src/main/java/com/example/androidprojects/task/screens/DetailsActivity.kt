@@ -21,6 +21,9 @@ class DetailsActivity : AppCompatActivity() {
         val userName = findViewById<TextInputEditText>(R.id.NameTextField)
         val userMail = findViewById<TextInputEditText>(R.id.mailTextField)
         val userNum = findViewById<TextInputEditText>(R.id.contactTextField)
+        val userDob = findViewById<TextInputEditText>(R.id.UserDobTextfield)
+        val userPass = findViewById<TextInputEditText>(R.id.userPassword)
+        val userConPass = findViewById<TextInputEditText>(R.id.confirmPassword)
 
         //button
         val submitBtn = findViewById<MaterialButton>(R.id.SbmtButton)
@@ -28,6 +31,11 @@ class DetailsActivity : AppCompatActivity() {
         //checkbox male and female
         val maleCheckbox = findViewById<CheckBox>(R.id.malecheckbox)
         val femaleCheckbox = findViewById<CheckBox>(R.id.femalecheckbox)
+        //checkbox situation handle false and true one time pe sirf one slection code
+        val chessCheckBox = findViewById<CheckBox>(R.id.cbChess)
+        val cookCheckBox = findViewById<CheckBox>(R.id.cbcook)
+        val travelCheckBox = findViewById<CheckBox>(R.id.cbTravel)
+        val danceCheckBox = findViewById<CheckBox>(R.id.cbDance)
         maleCheckbox.setOnCheckedChangeListener { _, isChecked ->
             if (isChecked) {
                 femaleCheckbox.isChecked = false
@@ -38,11 +46,7 @@ class DetailsActivity : AppCompatActivity() {
                 maleCheckbox.isChecked = false
             }
         }
-        //checkbox situation handle false and true one time pe sirf one slection code
-        val chessCheckBox = findViewById<CheckBox>(R.id.cbChess)
-        val cookCheckBox = findViewById<CheckBox>(R.id.cbcook)
-        val travelCheckBox = findViewById<CheckBox>(R.id.cbTravel)
-        val danceCheckBox = findViewById<CheckBox>(R.id.cbDance)
+
 
         //set one time pe one selection
         chessCheckBox.setOnCheckedChangeListener { _, isChecked ->
@@ -73,18 +77,33 @@ class DetailsActivity : AppCompatActivity() {
                 travelCheckBox.isChecked = false
             }
         }
-
-
         //submit button
         submitBtn.setOnClickListener {
+            val intent = Intent()
+            intent.putExtra("Name_key", userName.text.toString())
+            intent.putExtra("Mail_key", userMail.text.toString())
+            intent.putExtra("Con_key", userNum.text.toString())
+            intent.putExtra("Dob_key", userDob.text.toString())
+            intent.putExtra("Pass_key", userPass.text.toString())
+            intent.putExtra("Cpass_key", userConPass.text.toString())
 
-                val intent = Intent()
-                intent.putExtra("Name_key", userName.text.toString())
-                intent.putExtra("Mail_key", userMail.text.toString())
-                intent.putExtra("Con_key", userNum.text.toString())
-                setResult(RESULT_OK, intent);
-                finish()
+            intent.putExtra("Male_key", "")
+            intent.putExtra("Female_key", "")
+            if(maleCheckbox.isChecked){
+                intent.putExtra("Male_key", maleCheckbox.text.toString())
+            }
+            if(femaleCheckbox.isChecked){
+                intent.putExtra("Female_key", femaleCheckbox.text.toString())
+            }
+
+
+            intent.putExtra("Chess_key", chessCheckBox.text.toString())
+            intent.putExtra("Cook_key", cookCheckBox.text.toString())
+            intent.putExtra("Travel_key", travelCheckBox.text.toString())
+            intent.putExtra("Dance_key", danceCheckBox.text.toString())
+
+            setResult(RESULT_OK, intent);
+            finish()
         }
     }
-
 }
