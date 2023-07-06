@@ -45,7 +45,7 @@
                 android:id="@+id/Usernum"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Number:"
+                android:text="Mail:"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="@id/Nameheading"
                 app:layout_constraintTop_toBottomOf="@id/Nameheading" />
@@ -63,7 +63,7 @@
                 android:id="@+id/UserMail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Mail:"
+                android:text="Number:"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="@id/Nameheading"
                 app:layout_constraintTop_toBottomOf="@+id/Usernum" />
@@ -79,5 +79,4 @@
                 />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.card.MaterialCardView>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
