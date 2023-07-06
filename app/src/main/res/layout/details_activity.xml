@@ -42,7 +42,7 @@
             android:padding="5dp"
             app:boxStrokeColor="@color/red"
             app:endIconMode="custom"
-            app:endIconDrawable="@drawable/ic_person"
+            app:startIconDrawable="@drawable/ic_person"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/Heading">
@@ -65,7 +65,7 @@
             android:padding="5dp"
             app:boxStrokeColor="@color/red"
             app:endIconMode="custom"
-            app:endIconDrawable="@drawable/mail"
+            app:startIconDrawable="@drawable/mail"
             app:layout_constraintTop_toBottomOf="@+id/namelayout">
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/mailTextField"
@@ -83,16 +83,21 @@
             android:layout_marginRight="25dp"
             android:hint="@string/HintContact"
             android:inputType="textPersonName"
-            android:padding="5dp"
+            android:padding="1dp"
+            app:counterEnabled="true"
+            app:counterMaxLength="10"
             app:boxStrokeColor="@color/red"
             app:endIconMode="custom"
-            app:endIconDrawable="@drawable/ic_contact"
+            app:startIconDrawable="@drawable/ic_contact"
             app:layout_constraintTop_toBottomOf="@+id/maillayout">
+
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/contactTextField"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="number" />
+                android:inputType="number"
+                android:maxLength="10"
+                android:maxLines="1" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -108,7 +113,7 @@
             android:padding="5dp"
             app:boxStrokeColor="@color/red"
             app:endIconMode="custom"
-            app:endIconDrawable="@drawable/ic_date"
+            app:startIconDrawable="@drawable/ic_date"
             app:layout_constraintTop_toBottomOf="@+id/contactLayout">
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/UserDobTextfield"
@@ -137,6 +142,8 @@
                 android:id="@+id/userPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:maxLength="16"
+                android:maxLines="1"
                 android:inputType="textPassword" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -160,24 +167,52 @@
                 android:id="@+id/confirmPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:maxLength="16"
+                android:maxLines="1"
                 android:inputType="textPassword" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <CheckBox
-            android:id="@+id/malecheckbox"
+
+
+        <TextView
+            android:id="@+id/tvGenderTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/checkmale"
-            app:layout_constraintStart_toStartOf="@id/Confirmplayout"
-            app:layout_constraintTop_toBottomOf="@id/Confirmplayout" />
-        <CheckBox
-            android:id="@+id/femalecheckbox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:text="@string/checkFemale"
-            app:layout_constraintStart_toEndOf="@id/malecheckbox"
-            app:layout_constraintTop_toBottomOf="@id/Confirmplayout" />
+            android:padding="4dp"
+            android:text="@string/gendertitle"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/Confirmplayout"
+            app:layout_constraintTop_toBottomOf="@+id/Confirmplayout"
+             />
+
+
+   <RadioGroup
+       android:id="@+id/rgRadioGroup"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       app:layout_constraintStart_toStartOf="@+id/tvGenderTitle"
+       app:layout_constraintTop_toBottomOf="@+id/tvGenderTitle"
+       >
+       <RadioButton
+           android:id="@+id/malecheckbox"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/checkmale"
+          />
+       <RadioButton
+           android:id="@+id/femalecheckbox"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="15dp"
+           android:text="@string/checkFemale"
+            />
+   </RadioGroup>
+
+
+
 
 
         <TextView
@@ -189,8 +224,8 @@
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@id/malecheckbox"
-            app:layout_constraintTop_toBottomOf="@id/malecheckbox" />
+            app:layout_constraintStart_toStartOf="@id/rgRadioGroup"
+            app:layout_constraintTop_toBottomOf="@id/rgRadioGroup" />
 
         <CheckBox
             android:id="@+id/cbChess"

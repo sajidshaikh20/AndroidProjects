@@ -35,18 +35,22 @@ class ShowDetailsActivity : AppCompatActivity() {
 
             gendershow.text = intent.getStringExtra("female")
         }
+
+        var hobbies = ""
         if (intent.getStringExtra("chess")=="Chess"){
-            hobiesshow.text = intent.getStringExtra("chess")
+            hobbies  += intent.getStringExtra("chess") +" "
         }
         if (intent.getStringExtra("cook")=="Cooking"){
-            hobiesshow.text = intent.getStringExtra("cook")
+            hobbies  += intent.getStringExtra("cook") +" "
         }
         if (intent.getStringExtra("travel")=="Travel"){
-            hobiesshow.text = intent.getStringExtra("travel")
+            hobbies  += intent.getStringExtra("travel") +" "
         }
         if (intent.getStringExtra("dance")=="Dance"){
-            hobiesshow.text = intent.getStringExtra("dance")
+            hobbies  += intent.getStringExtra("dance") +" "
         }
+
+        hobiesshow.text = hobbies
     }
 }
 

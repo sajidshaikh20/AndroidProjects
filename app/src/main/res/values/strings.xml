@@ -70,5 +70,6 @@
     <string name="cookCheckBox">Cooking</string>
     <string name="travelCheckBox">Travel</string>
     <string name="DanceCheckBox">Dance</string>
+    <string name="gendertitle">Gender</string>
 
 </resources>
