@@ -12,15 +12,16 @@ import com.example.androidprojects.R
 import com.example.androidprojects.recyclerview.model.StudentModel
 import com.example.androidprojects.task.adapter.UserCardAdapter
 import com.example.androidprojects.task.model.UserModel
+import com.example.androidprojects.task.model.interfaceClass.DetailsInterface
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.imageview.ShapeableImageView
 import com.google.android.material.textview.MaterialTextView
 
-val userData = ArrayList<UserModel>()
-lateinit var adapter : UserCardAdapter
-class HomePage : AppCompatActivity() {
-    lateinit var recyclerView: RecyclerView
 
+class HomePage : AppCompatActivity(),DetailsInterface {
+    lateinit var recyclerView: RecyclerView
+    val userData = ArrayList<UserModel>()
+    lateinit var adapter : UserCardAdapter
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.main_task_activity)
@@ -34,7 +35,7 @@ class HomePage : AppCompatActivity() {
 
 
         //data.add(UserModel("sajid","7415316414","sajid20shaikh@gmail.com"))
-        adapter=UserCardAdapter(this, userData)
+        adapter=UserCardAdapter(this, userData, this@HomePage)
         recyclerView.adapter = adapter
 
         // assin url and find profile where show the image
@@ -65,10 +66,45 @@ class HomePage : AppCompatActivity() {
         userData.add(
             UserModel(data?.getStringExtra("Name_key").toString(),
             data?.getStringExtra("Mail_key").toString(),
-            data?.getStringExtra("Con_key").toString()
+            data?.getStringExtra("Con_key").toString(),
+            data?.getStringExtra("Dob_key").toString(),
+            data?.getStringExtra("Pass_key").toString(),
+            data?.getStringExtra("Cpass_key").toString(),
+            data?.getStringExtra("Male_key").toString(),
+            data?.getStringExtra("Female_key").toString(),
+            data?.getStringExtra("Chess_key").toString(),
+            data?.getStringExtra("Cook_key").toString(),
+            data?.getStringExtra("Travel_key").toString(),
+            data?.getStringExtra("Dance_key").toString(),
+
         ))
             adapter.notifyItemChanged( userData.size)
         }
     }
 
+    override fun getDetails(
+        name: String,
+        mail: String,
+        number: String,
+        dob: String,
+        male: String,
+        female: String,
+        chess: String,
+        cook: String,
+        travel: String,
+        dance: String
+    ) {
+        val intent = Intent(this, ShowDetailsActivity::class.java)
+        intent.putExtra("name", name)
+        intent.putExtra("mail", mail)
+        intent.putExtra("number", number)
+        intent.putExtra("dob", dob)
+        intent.putExtra("male", male)
+        intent.putExtra("female", female)
+        intent.putExtra("chess", chess)
+        intent.putExtra("cook", cook)
+        intent.putExtra("travel", travel)
+        intent.putExtra("dance", dance)
+        startActivity(intent)
+    }
 }
