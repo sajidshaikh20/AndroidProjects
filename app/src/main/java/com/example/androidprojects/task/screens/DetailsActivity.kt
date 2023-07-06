@@ -78,6 +78,7 @@ class DetailsActivity : AppCompatActivity() {
                 travelCheckBox.isChecked = false
             }
         }
+
         //submit button
         submitBtn.setOnClickListener {
             val intent = Intent()
@@ -96,7 +97,6 @@ class DetailsActivity : AppCompatActivity() {
             if(femaleCheckbox.isChecked){
                 intent.putExtra("Female_key", femaleCheckbox.text.toString())
             }
-
             intent.putExtra("Chess_key", "")
             intent.putExtra("Cook_key","")
             intent.putExtra("Travel_key", "")
@@ -114,7 +114,6 @@ class DetailsActivity : AppCompatActivity() {
             if (danceCheckBox.isChecked){
                 intent.putExtra("Dance_key", danceCheckBox.text.toString())
             }
-
             setResult(RESULT_OK, intent);
             finish()
         }
