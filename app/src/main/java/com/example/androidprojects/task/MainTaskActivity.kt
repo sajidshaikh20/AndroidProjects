@@ -76,12 +76,10 @@ class HomePage : AppCompatActivity(),DetailsInterface {
             data?.getStringExtra("Cook_key").toString(),
             data?.getStringExtra("Travel_key").toString(),
             data?.getStringExtra("Dance_key").toString(),
-
         ))
             adapter.notifyItemChanged( userData.size)
         }
     }
-
     override fun getDetails(
         name: String,
         mail: String,

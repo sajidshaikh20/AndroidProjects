@@ -50,12 +50,11 @@ class UserCardAdapter(
         holder.email.text = model.Email
 
 
-
         holder.cardView.setOnClickListener {
 
             Log.i("genderhere", model.male+" "+model.female)
+            Log.i("hobies", model.chess+" "+model.cook+" "+model.travel+" "+model.dance)
       detailsInterface.getDetails(model.name.toString(),model.Email.toString(),model.number.toString(),model.Dob.toString(),model.male.toString(),model.female.toString(),model.chess.toString(),model.cook.toString(),model.travel.toString(),model.dance.toString())
-
          }
     }
 }

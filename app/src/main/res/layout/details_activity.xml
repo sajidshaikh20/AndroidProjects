@@ -130,7 +130,7 @@
             android:padding="1dp"
             app:boxStrokeColor="@color/red"
             app:counterEnabled="true"
-            app:counterMaxLength="8"
+            app:counterMaxLength="16"
             app:passwordToggleEnabled="true"
             app:layout_constraintTop_toBottomOf="@+id/Doblayout">
             <com.google.android.material.textfield.TextInputEditText
@@ -153,7 +153,7 @@
             android:padding="1dp"
             app:boxStrokeColor="@color/red"
             app:counterEnabled="true"
-            app:counterMaxLength="8"
+            app:counterMaxLength="16"
             app:passwordToggleEnabled="true"
             app:layout_constraintTop_toBottomOf="@+id/passworLayout">
             <com.google.android.material.textfield.TextInputEditText
@@ -191,7 +191,6 @@
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@id/malecheckbox"
             app:layout_constraintTop_toBottomOf="@id/malecheckbox" />
-
 
         <CheckBox
             android:id="@+id/cbChess"

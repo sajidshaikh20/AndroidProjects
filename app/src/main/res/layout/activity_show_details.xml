@@ -132,12 +132,31 @@
                 android:id="@+id/mtvGenderShow"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Male"
+                android:text="null"
                 app:layout_constraintStart_toStartOf="@id/mtvNameShow"
                 app:layout_constraintTop_toBottomOf="@id/mtvDobShow"
                 />
 
 
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvHobiestitile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hobies:"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/mtvnumber"
+                app:layout_constraintTop_toBottomOf="@+id/mtvGendertitile" />
+
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvHobiesShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="null"
+                app:layout_constraintStart_toStartOf="@id/mtvNameShow"
+                app:layout_constraintTop_toBottomOf="@id/mtvGenderShow"
+                />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.card.MaterialCardView>
 
@@ -172,19 +191,7 @@
 <!--            android:layout_height="wrap_content"-->
 <!--            android:text="cook" />-->
 
-<!--        <com.google.android.material.textview.MaterialTextView-->
-<!--            android:id="@+id/mtvTravelShow"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="travel" />-->
 
-<!--        <com.google.android.material.textview.MaterialTextView-->
-<!--            android:id="@+id/mtvDanceShow"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="dance" />-->
-
-<!--    </androidx.appcompat.widget.LinearLayoutCompat>-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

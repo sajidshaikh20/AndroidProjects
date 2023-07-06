@@ -14,6 +14,7 @@ class ShowDetailsActivity : AppCompatActivity() {
         val numbershow  = findViewById<MaterialTextView>(R.id.mtvNumShow)
         val dobshow  = findViewById<MaterialTextView>(R.id.mtvDobShow)
         val gendershow  = findViewById<MaterialTextView>(R.id.mtvGenderShow)
+        val hobiesshow  = findViewById<MaterialTextView>(R.id.mtvHobiesShow)
 
 //        val chessshow  = findViewById<MaterialTextView>(R.id.mtvChessShow)
 //        val cookshow  = findViewById<MaterialTextView>(R.id.mtvCookShow)
@@ -34,12 +35,18 @@ class ShowDetailsActivity : AppCompatActivity() {
 
             gendershow.text = intent.getStringExtra("female")
         }
-
-//        chessshow.text = intent.getStringExtra("chess")
-//        cookshow.text = intent.getStringExtra("cook")
-//        travelshow.text = intent.getStringExtra("travel")
-//        danceshow.text = intent.getStringExtra("dance")
-
+        if (intent.getStringExtra("chess")=="Chess"){
+            hobiesshow.text = intent.getStringExtra("chess")
+        }
+        if (intent.getStringExtra("cook")=="Cooking"){
+            hobiesshow.text = intent.getStringExtra("cook")
+        }
+        if (intent.getStringExtra("travel")=="Travel"){
+            hobiesshow.text = intent.getStringExtra("travel")
+        }
+        if (intent.getStringExtra("dance")=="Dance"){
+            hobiesshow.text = intent.getStringExtra("dance")
+        }
     }
 }
 

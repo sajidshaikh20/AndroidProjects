@@ -36,6 +36,7 @@ class DetailsActivity : AppCompatActivity() {
         val cookCheckBox = findViewById<CheckBox>(R.id.cbcook)
         val travelCheckBox = findViewById<CheckBox>(R.id.cbTravel)
         val danceCheckBox = findViewById<CheckBox>(R.id.cbDance)
+
         maleCheckbox.setOnCheckedChangeListener { _, isChecked ->
             if (isChecked) {
                 femaleCheckbox.isChecked = false
@@ -96,11 +97,23 @@ class DetailsActivity : AppCompatActivity() {
                 intent.putExtra("Female_key", femaleCheckbox.text.toString())
             }
 
+            intent.putExtra("Chess_key", "")
+            intent.putExtra("Cook_key","")
+            intent.putExtra("Travel_key", "")
+            intent.putExtra("Dance_key","")
 
-            intent.putExtra("Chess_key", chessCheckBox.text.toString())
-            intent.putExtra("Cook_key", cookCheckBox.text.toString())
-            intent.putExtra("Travel_key", travelCheckBox.text.toString())
-            intent.putExtra("Dance_key", danceCheckBox.text.toString())
+            if (chessCheckBox.isChecked){
+                intent.putExtra("Chess_key", chessCheckBox.text.toString())
+            }
+            if (cookCheckBox.isChecked){
+                intent.putExtra("Cook_key", cookCheckBox.text.toString())
+            }
+            if (travelCheckBox.isChecked){
+                intent.putExtra("Travel_key", travelCheckBox.text.toString())
+            }
+            if (danceCheckBox.isChecked){
+                intent.putExtra("Dance_key", danceCheckBox.text.toString())
+            }
 
             setResult(RESULT_OK, intent);
             finish()
