@@ -47,7 +47,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/Heading">
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/NameTextField"
+                android:id="@+id/edtName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName" />
@@ -68,7 +68,7 @@
             app:startIconDrawable="@drawable/mail"
             app:layout_constraintTop_toBottomOf="@+id/namelayout">
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/mailTextField"
+                android:id="@+id/edtmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress" />
@@ -92,7 +92,7 @@
             app:layout_constraintTop_toBottomOf="@+id/maillayout">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/contactTextField"
+                android:id="@+id/edtContact"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="number"
@@ -116,7 +116,7 @@
             app:startIconDrawable="@drawable/ic_date"
             app:layout_constraintTop_toBottomOf="@+id/contactLayout">
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/UserDobTextfield"
+                android:id="@+id/edtDob"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="date" />
@@ -139,7 +139,7 @@
             app:passwordToggleEnabled="true"
             app:layout_constraintTop_toBottomOf="@+id/Doblayout">
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/userPassword"
+                android:id="@+id/edtUserPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:maxLength="16"
@@ -164,7 +164,7 @@
             app:passwordToggleEnabled="true"
             app:layout_constraintTop_toBottomOf="@+id/passworLayout">
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/confirmPassword"
+                android:id="@+id/edtConfirmPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:maxLength="16"
@@ -197,26 +197,21 @@
        app:layout_constraintTop_toBottomOf="@+id/tvGenderTitle"
        >
        <RadioButton
-           android:id="@+id/malecheckbox"
+           android:id="@+id/cbMale"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
            android:text="@string/checkmale"
           />
        <RadioButton
-           android:id="@+id/femalecheckbox"
+           android:id="@+id/cbFemale"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
            android:layout_marginStart="15dp"
            android:text="@string/checkFemale"
             />
    </RadioGroup>
-
-
-
-
-
         <TextView
-            android:id="@+id/Healthview"
+            android:id="@+id/tvHealthview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="4dp"
@@ -232,8 +227,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/chessCheckBox"
-            app:layout_constraintStart_toStartOf="@id/Healthview"
-            app:layout_constraintTop_toBottomOf="@id/Healthview"
+            app:layout_constraintStart_toStartOf="@id/tvHealthview"
+            app:layout_constraintTop_toBottomOf="@id/tvHealthview"
             app:layout_constraintHorizontal_chainStyle="spread_inside"
             android:layout_marginEnd="8dp" />
 
@@ -267,7 +262,7 @@
             android:layout_marginStart="8dp" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/SbmtButton"
+            android:id="@+id/mtSbmtButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="#2D9106"

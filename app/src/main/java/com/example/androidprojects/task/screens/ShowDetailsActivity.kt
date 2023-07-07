@@ -38,18 +38,17 @@ class ShowDetailsActivity : AppCompatActivity() {
 
         var hobbies = ""
         if (intent.getStringExtra("chess")=="Chess"){
-            hobbies  += intent.getStringExtra("chess") +" "
+            hobbies  += intent.getStringExtra("chess") +","
         }
         if (intent.getStringExtra("cook")=="Cooking"){
             hobbies  += intent.getStringExtra("cook") +" "
         }
         if (intent.getStringExtra("travel")=="Travel"){
-            hobbies  += intent.getStringExtra("travel") +" "
+            hobbies  += intent.getStringExtra("travel") +","
         }
         if (intent.getStringExtra("dance")=="Dance"){
-            hobbies  += intent.getStringExtra("dance") +" "
+            hobbies  += intent.getStringExtra("dance") +""
         }
-
         hobiesshow.text = hobbies
     }
 }

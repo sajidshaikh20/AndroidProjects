@@ -15,6 +15,9 @@
         android:theme="@style/Theme.AndroidProjects"
         tools:targetApi="31">
         <activity
+            android:name=".fragmentDemo.MainFragmentActivity"
+            android:exported="false" />
+        <activity
             android:name=".task.screens.ShowDetailsActivity"
             android:exported="false" />
         <activity

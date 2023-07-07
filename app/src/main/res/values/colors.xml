@@ -4,4 +4,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="whitesmoke">#dcdcdc</color>
     <color name="red">#E11313</color>
+    <color name="wpcolor">#0B8F80</color>
+
 </resources>

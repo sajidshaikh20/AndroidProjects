@@ -71,5 +71,13 @@
     <string name="travelCheckBox">Travel</string>
     <string name="DanceCheckBox">Dance</string>
     <string name="gendertitle">Gender</string>
+    <string name="UserNameHeading">User Details</string>
+    <string name="nameHeading">Name :</string>
+    <string name="NumberHeading">Number:</string>
+    <string name="MailHeading">Mail:</string>
+    <string name="DobHeading">Dob:</string>
+    <string name="GenderHeading">Gender:</string>
+    <string name="HobiesHeading">Hobies:</string>
+    <string name="fragmentDemoTitle">Fragment</string>
 
 </resources>
