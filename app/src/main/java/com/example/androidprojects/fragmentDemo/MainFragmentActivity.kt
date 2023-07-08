@@ -14,10 +14,20 @@ class MainFragmentActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_fragment)
+        //Code for the color change for the status baar perticular activity
+        val window = this.window
+        window.statusBarColor = this.resources.getColor(R.color.black)
 
-        transparentStatusAndNavigation();
-    }
 
+
+
+
+     } // on create funstion bracket
+
+
+
+
+    // transparent status and navigation bar function
     private fun transparentStatusAndNavigation() {
         //make full transparent statusBar
         if (Build.VERSION.SDK_INT >= 19 && Build.VERSION.SDK_INT < 21) {
@@ -51,4 +61,4 @@ class MainFragmentActivity : AppCompatActivity() {
         }
         win.attributes = winParams
     }
-}
+} // main class bracket all the function have inside this bracket
