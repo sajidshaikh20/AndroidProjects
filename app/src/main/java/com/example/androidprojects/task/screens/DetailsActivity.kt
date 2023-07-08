@@ -42,17 +42,17 @@ class DetailsActivity : AppCompatActivity() {
         setContentView(R.layout.details_activity)
         var isAllFieldsChecked = false
 
-        //find edit text
-        userName = findViewById(R.id.NameTextField)
-        userMail = findViewById(R.id.mailTextField)
-        userNum = findViewById(R.id.contactTextField)
-        userDob = findViewById(R.id.UserDobTextfield)
-        userPass = findViewById(R.id.userPassword)
-        userConPass = findViewById(R.id.confirmPassword)
+        //find edit text input
+        userName = findViewById(R.id.edtName)
+        userMail = findViewById(R.id.edtmail)
+        userNum = findViewById(R.id.edtContact)
+        userDob = findViewById(R.id.edtDob)
+        userPass = findViewById(R.id.edtUserPassword)
+        userConPass = findViewById(R.id.edtConfirmPassword)
 
         //check box male and female
-        maleCheckbox = findViewById(R.id.malecheckbox)
-        femaleCheckbox = findViewById(R.id.femalecheckbox)
+        maleCheckbox = findViewById(R.id.cbMale)
+        femaleCheckbox = findViewById(R.id.cbFemale)
         //checkbox situation handle false and true one time pe sirf one slection code
         chessCheckBox = findViewById(R.id.cbChess)
         cookCheckBox = findViewById(R.id.cbcook)
@@ -66,7 +66,7 @@ class DetailsActivity : AppCompatActivity() {
 //        val userConPass = findViewById<TextInputEditText>(R.id.confirmPassword)
 
         //button
-        val submitBtn = findViewById<MaterialButton>(R.id.SbmtButton)
+        val mtSubmitBtn = findViewById<MaterialButton>(R.id.mtSbmtButton)
     Doblayout = findViewById(R.id.Doblayout)
 //    userDob.isEnabled = true
     Doblayout.setStartIconOnClickListener {
@@ -115,10 +115,10 @@ class DetailsActivity : AppCompatActivity() {
 //        }
 
         //submit button
-        submitBtn.setOnClickListener {
+    mtSubmitBtn.setOnClickListener {
            // val intent = Intent()
 
-            isAllFieldsChecked = CheckAllFields()
+            isAllFieldsChecked = checkAllFields()
             if (isAllFieldsChecked){
                 val validPass = isValidPass(userPass.text.toString()) == null
                 val validEmail = isValidEmail(userMail.text.toString()) == true
@@ -172,8 +172,6 @@ class DetailsActivity : AppCompatActivity() {
         }
         return  true
     }
-
-
 
     private fun isValidPass(password: String): String? {
 
@@ -250,7 +248,7 @@ class DetailsActivity : AppCompatActivity() {
         datePickerDialog.datePicker.maxDate = System.currentTimeMillis()
         datePickerDialog.show()
     }
-    private fun CheckAllFields(): Boolean {
+    private fun  checkAllFields(): Boolean {
         if (userName.length() == 0) {
             userName.error= "Name is required"
             return false
@@ -280,7 +278,6 @@ class DetailsActivity : AppCompatActivity() {
             Toast.makeText(this, "Confirm Password is Must Same", Toast.LENGTH_SHORT).show()
 //            userConPass.setError("Confirm Password is Must Same")
         }
-
 
 //            if (maleCheckbox.isChecked ==false && femaleCheckbox.isChecked ==false){
 //                maleCheckbox.error = ""

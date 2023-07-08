@@ -5,6 +5,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.androidprojects.activity_life_cycle.firstactivity
+import com.example.androidprojects.fragmentDemo.MainFragmentActivity
 import com.example.androidprojects.healthform.healform_ui
 import com.example.androidprojects.instagram.instagram_ui
 import com.example.androidprojects.intent.intent_demo
@@ -30,6 +31,7 @@ class MainActivity : AppCompatActivity() {
         val phases_lc = findViewById<MaterialButton>(R.id.lifecycle)
         val nextrecycleview = findViewById<MaterialButton>(R.id.recycle)
         val nexttask = findViewById<MaterialButton>(R.id.Task_demo)
+        val btnFragment = findViewById<MaterialButton>(R.id.mbtnFragment)
 
         nextinsta.setOnClickListener {
             callActivity()
@@ -65,6 +67,11 @@ class MainActivity : AppCompatActivity() {
         nexttask.setOnClickListener {
             val intent = Intent(this, HomePage::class.java)
             startActivity(intent)
+        }
+
+        btnFragment.setOnClickListener {
+            val i = Intent(this, MainFragmentActivity::class.java)
+            startActivity(i)
         }
     }
     private fun callActivity() {

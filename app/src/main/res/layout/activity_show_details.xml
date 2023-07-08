@@ -5,9 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".task.screens.ShowDetailsActivity">
-
-
-
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -28,7 +25,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:text="User Details"
+                android:text="@string/UserNameHeading"
                 android:textStyle="bold"
                 android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -48,7 +45,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="40dp"
-                android:text="Name :"
+                android:text="@string/nameHeading"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -57,7 +54,7 @@
                 android:id="@+id/mtvNameShow"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="sajid"
+                android:text=""
                 app:layout_constraintTop_toTopOf="@id/mtvnametitle"
                 app:layout_constraintStart_toEndOf="@id/mtvnametitle"
                 android:layout_marginStart="60dp"
@@ -68,7 +65,7 @@
                 android:id="@+id/mtvmail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Number:"
+                android:text="@string/NumberHeading"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="@id/mtvnametitle"
                 app:layout_constraintTop_toBottomOf="@id/mtvnametitle" />
@@ -77,7 +74,7 @@
                 android:id="@+id/mtvMailShow"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="7415631641"
+                android:text=""
                 app:layout_constraintStart_toEndOf="@id/mtvnametitle"
                 app:layout_constraintTop_toBottomOf="@+id/mtvnametitle"
                 android:layout_marginStart="60dp"
@@ -87,7 +84,7 @@
                 android:id="@+id/mtvnumber"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Mail:"
+                android:text="@string/MailHeading"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="@id/mtvmail"
                 app:layout_constraintTop_toBottomOf="@id/mtvmail" />
@@ -96,15 +93,15 @@
                 android:id="@+id/mtvNumShow"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="sajid@gmail.com"
+                android:text=""
                 app:layout_constraintStart_toStartOf="@id/mtvMailShow"
                 app:layout_constraintTop_toBottomOf="@id/mtvMailShow"
                 />
             <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/userdob"
+                android:id="@+id/mtvuserdob"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Dob:"
+                android:text="@string/DobHeading"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="@id/mtvnumber"
                 app:layout_constraintTop_toBottomOf="@+id/mtvnumber" />
@@ -115,43 +112,39 @@
                 android:layout_height="wrap_content"
                 app:layout_constraintStart_toStartOf="@id/mtvMailShow"
                 app:layout_constraintTop_toBottomOf="@id/mtvnumber"
-                android:text="20/02/2003" />
-
-
+                android:text="" />
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/mtvGendertitile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Gender:"
+                android:text="@string/GenderHeading"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="@id/mtvnumber"
-                app:layout_constraintTop_toBottomOf="@+id/userdob" />
+                app:layout_constraintTop_toBottomOf="@+id/mtvuserdob" />
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/mtvGenderShow"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="null"
+                android:text=""
                 app:layout_constraintStart_toStartOf="@id/mtvNameShow"
                 app:layout_constraintTop_toBottomOf="@id/mtvDobShow"
                 />
-
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/mtvHobiestitile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Hobies:"
+                android:text="@string/HobiesHeading"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="@id/mtvnumber"
                 app:layout_constraintTop_toBottomOf="@+id/mtvGendertitile" />
-
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/mtvHobiesShow"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="null"
+                android:text=""
                 app:layout_constraintStart_toStartOf="@id/mtvNameShow"
                 app:layout_constraintTop_toBottomOf="@id/mtvGenderShow"
                 />
