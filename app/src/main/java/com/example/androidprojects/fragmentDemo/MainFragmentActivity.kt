@@ -15,7 +15,7 @@ class MainFragmentActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_fragment)
 
-        transparentStatusAndNavigation();
+
     }
 
     private fun transparentStatusAndNavigation() {

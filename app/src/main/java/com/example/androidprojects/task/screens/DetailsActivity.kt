@@ -282,7 +282,6 @@ class DetailsActivity : AppCompatActivity() {
 //            if (maleCheckbox.isChecked ==false && femaleCheckbox.isChecked ==false){
 //                maleCheckbox.error = ""
 //            }
-
         // after all validation return true.
         return true
     }
